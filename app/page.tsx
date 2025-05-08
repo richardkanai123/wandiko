@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import TextGenerateEffect from '@/components/ui/text-gen-effect'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ScrollAnimation } from '@/components/ui/scroll-animation'
 
 
 const Home = () => {
@@ -57,42 +58,48 @@ const Home = () => {
 
           {/* Key Features */}
           <div className="w-full md:w-1/2 space-y-6">
-            <div className="flex items-start shadow-md p-2 rounded-md">
-              <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
-                📚
-              </div>
-              <div className="ml-4">
-                <h3 className="text-xl font-semibold text-gray-900">Comprehensive Research Assistance</h3>
-                <p className="text-gray-700">
-                  We help students formulate research questions, analyze literature, and structure their studies for academic success.
-                </p>
-              </div>
-            </div>
+            <ScrollAnimation delay={0.2} direction="right">
+                <div className="flex items-start shadow-md p-2 rounded-md hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
+                        📚
+                    </div>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-gray-900">Comprehensive Research Assistance</h3>
+                        <p className="text-gray-700">
+                          We help students formulate research questions, analyze literature, and structure their studies for academic success.
+                        </p>
+                    </div>
+                </div>
+            </ScrollAnimation>
 
-            <div className="flex items-start shadow-md p-2 rounded-md">
-              <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
-                ✍️
-              </div>
-              <div className="ml-4">
-                <h3 className="text-xl font-semibold text-gray-900">Ethical & Transparent Writing Support</h3>
-                <p className="text-gray-700">
-                  Our team ensures originality with plagiarism checks, methodology validation, and expert editing for clear communication.
-                </p>
-              </div>
-            </div>
+            <ScrollAnimation delay={0.4} direction="right">
+                <div className="flex items-start shadow-md p-2 rounded-md hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
+                        ✍️
+                    </div>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-gray-900">Ethical & Transparent Writing Support</h3>
+                        <p className="text-gray-700">
+                          Our team ensures originality with plagiarism checks, methodology validation, and expert editing for clear communication.
+                        </p>
+                    </div>
+                </div>
+            </ScrollAnimation>
 
-            <div className="flex items-start shadow-md p-2 rounded-md">
-              <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
-                🌍
-              </div>
-              <div className="ml-4">
-                <h3 className="text-xl font-semibold text-gray-900">Global Publication Guidance</h3>
-                <p className="text-gray-700">
-                  We assist in journal selection, impact factor analysis, and mentorship for students aiming for academic recognition.
-                </p>
-              </div>
-            </div>
-          </div>
+            <ScrollAnimation delay={0.6} direction="right">
+                <div className="flex items-start shadow-md p-2 rounded-md hover:shadow-lg transition-shadow duration-300">
+                    <div className="bg-blue-500 text-white p-3 rounded-lg shadow">
+                        🌍
+                    </div>
+                    <div className="ml-4">
+                        <h3 className="text-xl font-semibold text-gray-900">Global Publication Guidance</h3>
+                        <p className="text-gray-700">
+                          We assist in journal selection, impact factor analysis, and mentorship for students aiming for academic recognition.
+                        </p>
+                    </div>
+                </div>
+            </ScrollAnimation>
+        </div>
         </div>
       </section>
 
